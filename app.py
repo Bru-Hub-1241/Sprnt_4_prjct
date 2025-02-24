@@ -1,3 +1,4 @@
+from numpy import size
 import pandas as pd
 import streamlit as st
 import plotly.express as px
@@ -12,4 +13,12 @@ if st.checkbox("Show only cars under $20,000"):
 
 st.write(df.head())
 
-#st.plotly_chart(#plot command you used in EDA.ipynb)
+st.plotly_chart(px.histogram(df, x='price', nbins=50, title='car prices'))
+
+
+fig = px.scatter(df, x='prices', y='car prices',)
+fig.show()
+
+fig = px.scatter(df, x='model', y='model_year', color= 'paint_color', title= 'Vehicle Model Scatter Plot') 
+st.plotly_chart(fig)
+
