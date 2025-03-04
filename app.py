@@ -22,4 +22,6 @@ st.plotly_chart(fig)
 fig = px.scatter(df, x='model', y='model_year', color= 'paint_color', title= 'Vehicle Model Scatter Plot') 
 st.plotly_chart(fig)
 
-st.plotly_chart(px.histogram(df, x='model', nbins=40, title='odometer'))
+st.plotly_chart(px.histogram(df, x='odometer', nbins=40, title='milage amount'))
+
+print(df[df['type'] == df['type'].max()])
