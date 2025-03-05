@@ -23,6 +23,7 @@
 
 ## Improvments on observing what you are looking for in a vehicle. Narrowing down your price points, or a certain model year that you are looking for. To make it quicker and easier to view for advertising sales. 
 
+### i know i am having issues with the adding the slider i am not sure how to fix the options to " non empty" 
 
 https://sprnt-4-prjct.onrender.com
 

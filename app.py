@@ -7,7 +7,7 @@ st.header("Car Sales Analysis")
 
 df = pd.read_csv("vehicles_us.csv")
 
-if st.checkbox("Show only cars under $20,000"):
+if st.slider("Show only cars under $20,000"):
     df = df[df['price'] < 20000]
 
 st.write(df.head())
@@ -29,5 +29,5 @@ st.plotly_chart(px.histogram(df, x='odometer', nbins=40, title='milage amount'))
 
 print(df[df['type'] == df['type'].max()])
 
-if st.select_slider("Show only milage under 100,000"):
-    df = df[df['count'] < 100000]
+if st.slider("Show only milage under 100,000"):
+    df = df[df['odometer'] < 100000]
